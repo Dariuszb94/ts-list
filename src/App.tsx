@@ -3,7 +3,11 @@ import "./App.css";
 const App: FC = () => {
   return (
     <div className="App">
-      <div className="header"></div>
+      <div className="header">
+        <input type="text" placeholder="Task..." />
+        <input type="number" placeholder="Deadline..." />
+        <button>Add task</button>
+      </div>
       <div className="todoList"></div>
     </div>
   );
