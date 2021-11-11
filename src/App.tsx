@@ -11,7 +11,8 @@ const App: FC = () => {
       : setDeadline(parseInt(event.target.value));
   };
   const addTask = (): void => {
-    setTodoList([...todoList], task);
+    const newTask = { taskName: task, deadline: deadline };
+    setTodoList([...todoList, newTask]);
   };
   return (
     <div className="App">
